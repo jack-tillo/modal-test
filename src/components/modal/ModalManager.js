@@ -42,9 +42,6 @@ class ModalManager {
         if (modal && modal.id) {
             this.instances.delete(modal.id)
         }
-        if (this.instances.size === 0) {
-            window.document.removeEventListener('keydown', this.handleEscape)
-        }
     }
 
     /**
